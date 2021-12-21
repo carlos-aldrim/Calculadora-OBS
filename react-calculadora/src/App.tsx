@@ -5,25 +5,17 @@ function App() {
   const [number1, setNumber1] = useState(0);
   const [number2, setNumber2] = useState(0);
   const [resultado, setResultado] = useState(0);
-  console.log(process.env);
-
   const validateValue = (value: number): boolean => {
-    if (value <= 0) {
-      return false;
-    }
     else {
-      return true;
-    }
-  }
 
   const handleChangeNumber1 = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const value = e.target.valueAsNumber;
-    if (validateValue(value)) setNumber1(value);
+    setNumber1(value);
   }
 
   const handleChangeNumber2 = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const value = e.target.valueAsNumber;
-    if (validateValue(value)) setNumber2(value);
+    setNumber2(value);
   }
 
   const [clickedButton, setClickedButton] = useState('');
