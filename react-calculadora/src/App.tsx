@@ -5,8 +5,6 @@ function App() {
   const [number1, setNumber1] = useState(0);
   const [number2, setNumber2] = useState(0);
   const [resultado, setResultado] = useState(0);
-  const validateValue = (value: number): boolean => {
-    else {
 
   const handleChangeNumber1 = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const value = e.target.valueAsNumber;
